@@ -1,9 +1,7 @@
 package com.example.employeeservice.response;
-
-
 import lombok.Getter;
 import lombok.Setter;
-import org.springframework.stereotype.Component;
+import org.springframework.transaction.annotation.Transactional;
 
 @Getter
 @Setter

@@ -7,9 +7,9 @@ import com.example.employeeservice.response.EmployeeResponse;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.boot.web.client.RestTemplateBuilder;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
+import org.springframework.web.reactive.function.client.WebClient;
 
 @Service
 public class EmployeeService {
@@ -19,27 +19,32 @@ public class EmployeeService {
     @Autowired
     private ModelMapper modelMapper;
 
+//    @Autowired
+//    private RestTemplate restTemplate;
+
     @Autowired
-    private RestTemplate restTemplate;
+    private WebClient webClient;
+/*
+    @Value(("${addressservice.base.url}"))
+    private String addressBaseURL;
 
+ */
 
-    public EmployeeService( @Value(("${addressservice.base.url}")) String addressBaseURL,RestTemplateBuilder builder) {
-
-        this.restTemplate = builder
-                .rootUri(addressBaseURL)
-                .build();
+    public EmployeeService() {
     }
-
 
     public EmployeeResponse getEmployeeById(int id) {
 
-        AddressResponse addressResponse = restTemplate.getForObject("/address/{id}", AddressResponse.class, id);
+        //AddressResponse addressResponse = restTemplate.getForObject(addressBaseURL+"/address/{id}", AddressResponse.class, id);
+        AddressResponse addressResponse = webClient.get().uri("/address/"+id).retrieve().bodyToMono(AddressResponse.class).block();
+
 
         Employee employee = employeeRepo.findById(id).get();
         EmployeeResponse employeeResponse = modelMapper.map(employee, EmployeeResponse.class);
         employeeResponse.setAddressResponse(addressResponse);
 
-        return employeeResponse;
 
+
+        return employeeResponse;
     }
 }

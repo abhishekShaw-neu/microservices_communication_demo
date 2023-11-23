@@ -1,14 +1,6 @@
 
 j
 :employee-service/src/main/resources/application.properties,5\8\584aabd3c01f767e85221ddb1ff127ad7ff06bc0
-ì
-cemployee-address-service/src/main/java/com/example/employeeaddressservice/config/AddressConfig.java,1\d\1d3ae97090d76dff0942c7df7308aa6dd4526b1a
-õ
-kemployee-address-service/src/main/java/com/example/employeeaddressservice/controller/AddressController.java,0\5\05742502c03e27d7f6d183069296effbd0cb97d6
-ç
-]employee-address-service/src/main/java/com/example/employeeaddressservice/entity/Address.java,6\7\67031b5f1db9cb8af60241d9d3aa33f282a2cf35
-è
-_employee-address-service/src/main/java/com/example/employeeaddressservice/repo/AddressRepo.java,2\8\28c079b25e4e16fac79642d5dbea9a8f8ffda2fa
 à
 Xemployee-service/src/main/java/com/example/employeeservice/config/EmployeeAppConfig.java,1\3\134f93578f29bc1b424c5a2dfa437953efc41272
 ç
@@ -17,11 +9,9 @@ Xemployee-service/src/main/java/com/example/employeeservice/config/EmployeeAppCo
 Oemployee-service/src/main/java/com/example/employeeservice/entity/Employee.java,b\b\bb396460acee3c86343bb23b92781fbe8fc8dd28
 Å
 Qemployee-service/src/main/java/com/example/employeeservice/repo/EmployeeRepo.java,2\d\2d43f857d66be79c5681ad53b65af26bc99f9b35
-ï
-eemployee-address-service/src/main/java/com/example/employeeaddressservice/service/AddressService.java,4\7\473409f032273d8380463f167239e0ed7267f584
 á
 Wemployee-service/src/main/java/com/example/employeeservice/service/EmployeeService.java,9\a\9ab8df1af491a7ace5a09b478eef1d01f3f54f27
-ó
-gemployee-address-service/src/main/java/com/example/employeeaddressservice/response/AddressResponse.java,3\d\3d43e5eb3640142c8fcc448690e37d6b29829387
 â
 Yemployee-service/src/main/java/com/example/employeeservice/response/EmployeeResponse.java,3\9\39007916dcb157fddd21284c00510575f3a2dc6a
+õ
+kemp-service-address/src/main/java/com/example/employeeaddressservice/EmployeeAddressServiceApplication.java,f\4\f436cfdc2288bd0f39f33b810a1bf3245932b7d3
