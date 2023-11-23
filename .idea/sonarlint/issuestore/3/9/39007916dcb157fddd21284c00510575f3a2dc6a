@@ -1,13 +1,0 @@
-
-p	java:S116"VRename this field "blood_group" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ä³·Êüÿÿÿÿ
-H
-java:S1068
-"&Remove this unused "id" private field.(ôç¼Óşÿÿÿÿ8¸¢Ö¿1
-E
-java:S1068"(Remove this unused "name" private field.(Ë¥¼8º¢Ö¿1
-K
-java:S1068")Remove this unused "email" private field.(ª«Õìùÿÿÿÿ8¼¢Ö¿1
-U
-java:S1068"3Remove this unused "addressResponse" private field.(¼”Ğ‚ÿÿÿÿÿ8¼¢Ö¿1
-Q
-java:S1068"/Remove this unused "blood_group" private field.(ä³·Êüÿÿÿÿ8½¢Ö¿1
