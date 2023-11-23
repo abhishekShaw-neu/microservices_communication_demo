@@ -56,7 +56,7 @@ public class EmployeeService {
 
         //AddressResponse addressResponse = restTemplate.getForObject(addressBaseURL+"/address/{id}", AddressResponse.class, id);
         //AddressResponse addressResponse = webClient.get().uri("/address/"+id).retrieve().bodyToMono(AddressResponse.class).block();
-        AddressResponse addressResponse = addressClient.getAddressByEmployeeId(id);
+        AddressResponse addressResponse = addressClient.getAddressByEmployeeId(id).getBody();
 
 
         Employee employee = employeeRepo.findById(id).get();
